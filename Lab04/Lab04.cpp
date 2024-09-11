@@ -50,7 +50,24 @@ void arithmetic() {
 	cout << result << endl;
 }
 void geometric() {
-	// I recommend writing your geometric series code here
+	int x;
+	int y;
+	int z;
+	int result = 0;
+
+	cout << "Enter a number to start at:";
+	cin >> x;
+	cout << "Enter a number to add:";
+	cin >> y;
+	cout << "Enter the number of elements in a series:";
+	cin >> z;
+
+	for (int i = 1; i <= z; i++) {
+		result += x;
+		x *= y;
+	}
+
+	cout << result << endl;
 }
 int main() {
 	int choice;
